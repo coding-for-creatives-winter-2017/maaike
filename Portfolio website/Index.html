@@ -1,5 +1,4 @@
 	
-<!-- General note; I have tried to put in some scroll effects with jQuery but it didn't work/show up is the link maybe incorrect? !-->
 
 	<!DOCTYPE html>
 	<html>
@@ -8,12 +7,15 @@
 			 <title>Maaike Pull</title>
 
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		    <script type="text/javascript" src="webpage.js"></script>
 
+		    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico" rel="stylesheet">
+
+		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -25,17 +27,18 @@
 
 		</head>
 
-		 <body id="home">
+		 <body data-spy="scroll" data-target=".navbar" id="home">
 		 <br>
 		<br>
 		
 		 	
+
 	<div class="navbar">
 			  
-			  <a href="#contact">CONTACT</a>
-			  <a href="#about">ABOUT ME</a>
-			  <a href="#portfolio">WORK</a>
-			  <a href="#home">HOME</a>  
+			  <a class="scrollTo" data-scrollTo="contact" href="#contact">CONTACT</a>
+			  <a class="scrollTo" data-scrollTo="about"href="#about">ABOUT ME</a>
+			  <a class="scrollTo" data-scrollTo="portfolio" href="#portfolio">WORK</a>
+			  <a class="scrollTo" data-scrollTo="home" href="#home">HOME</a>  
 			
 	</div>
 
@@ -67,7 +70,7 @@
 
 
 
-	<h1 id= "portfolio" class= "header"> WORK</h1>
+	<h1 id= "portfolio" class= "header">Work</h1>
 	<br>
 	<br>
 
@@ -77,17 +80,17 @@
 	         
 	        </div>
 
-	        <!-- I want to make these divs clickable so they link to the work page but I can't find a way to make just the div/img a link and not the entire page after the href. !-->
+	        <!-- issue fixed -->
 
 	             		<a href="statefarm.html">
 	               <div  id="circle" class="gallery_product col-lg-4 col-md-4 col-sm-4">
-	                <img id="statefarm" src="statefarm.jpg" class="img-responsive">
+	                <img id="statefarm" src="statefarm.jpg" class="img-responsive"></a>
 	            </div>
 
 	         
 	             <a href="kraken.html">
 	            <div  id="circle" id="kraken" class="gallery_product col-lg-4 col-md-4 col-sm-4">    
-	                <img  src="kraken-logo.jpg" class="img-responsive" >
+	                <img  src="kraken-logo.jpg" class="img-responsive" ></a>
 	             
 	            </div>
 	    </div>
@@ -101,7 +104,7 @@
 	<br>
 	<br>
 
-		<h1 id= "about" class= "header"> ABOUT ME</h1>
+		<h1 id= "about" class= "header"> About me</h1>
 			<br>
 			<br>
 			<br>
@@ -123,7 +126,7 @@
 	                	  	<p class="paragraph" >First of all to save any awkwardness, Maaike is basically pronounced like Micah! I'm an Art Director originally from Holland (the country not the one in PA.)  I have a special talent for being blunt and kicking people underneath tables but I swear that I'm friendly.  I'm currently a student at Miami Ad School in NYC.  When I'm not doing work for school I enjoy playing video games, making bad puns, and watching incredibly mundane Japanese reality shows on Netflix.</p>
 	           
 
-					<!-- I feel like there's a better way to deal with "breaking a page" instead of putting in a bunch of <br> or not? !-->
+				
 							<br>
 							<br>
 							<br>
@@ -146,29 +149,36 @@
 			</div>
 		
 		 <div class="container">
-		<h1 id= "contact" class= "header"> CONTACT</h1>
+		<h1 id= "contact" class= "header" > Contact</h1>
 		<br>
 			<br>
 			<br>
 
 			
 
-				<p  id="contactP" class="paragraph">E-mail: <br>
+				<p  id="contactP" class="paragraph"><span class="contactinfo"><i>E-mail</i></span> <br><br>
 				 pull.maaike@gmail.com 
 					<br>
 					<br>
-					<br>
-					<br>
+				
 
-					<!-- put in hrefs to lnk to the social pages !-->
-					
-				social links: <br>
-				blabla
+
+				<span class="contactinfo"><i>social links:</i></span>
+				 <br>
+				  <a href="https://www.instagram.com/mipull/" class="fa fa-instagram"></a>
+				  <a href="https://twitter.com/maaike_pull" class="fa fa-twitter"></a>
+				  <a href="https://www.linkedin.com/in/maaikepull/" class="fa fa-linkedin"></a>
 	    </div>
 	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 			
-
-
-	</html>
-
+	</body>
+</html>
 

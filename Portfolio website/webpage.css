@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 
 html, body{
   height: 100%;
@@ -8,24 +8,23 @@ html, body{
 body{
    background-color: white;
   font-family: Futura;
-}
-
-svg {
-    display: block;
-    font: 10.5em 'Futura';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
+  position: relative;
 }
 
 
 .header {
-  font-family: "futura";
+
+  font-family: 'Pacifico', cursive; 
   text-align: center;
-  color:black; 
+  font-size:40pt;
+  text-decoration:underline;
+  color:#CFAAB7;
 
 }
-
+ .projecttitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 30pt;
+}
 
 
 .port-image
@@ -81,6 +80,7 @@ border:15px solid  #CFAAB7;
 
  #contactP {
   text-align: center;
+
  }
 
 .navbar {
@@ -133,6 +133,11 @@ border:15px solid  #CFAAB7;
 
 }
 
+#krakenimg {
+     display:block;
+    margin:auto;
+}
+
 #titleheader {
    background-color: white;
 
@@ -142,7 +147,7 @@ border:15px solid  #CFAAB7;
 #titlehead-img {
    display: block;
     margin: auto;
-    width: 40%;
+    width: 35%;
 }
 
 .carousel-fade {
@@ -177,7 +182,9 @@ border:15px solid  #CFAAB7;
     }
 }
 
-
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
 
 html, 
 body, 
@@ -187,5 +194,15 @@ body,
     height: 100%;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
 
-
+.contactinfo {
+  font-size: 13pt;
+}
