@@ -16,7 +16,7 @@ $(".left").click(function(){
 $('a.scrollto').on('click', function(){
   
 
-  var scrollTo = $(this).attr('data-scrollto');
+  var scrollto = $(this).attr('data-scrollto');
   
   
 
@@ -33,13 +33,13 @@ $('a.scrollto').on('click', function(){
   $('body, html').animate({
     
 
-    "scrolltop": $('#'+scrollTo).offset().top
+    "scrolltop": $('#'+scrollto).offset().top
   }, 1000 );
   return false;
   
 })
 
-$('body').scrollspy({ target: '#navbar-example' })
+$('body').scrollspy({ target: '#navbar' })
 
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
